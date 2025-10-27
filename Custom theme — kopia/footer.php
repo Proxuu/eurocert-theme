@@ -1,7 +1,7 @@
 </main>
 
 
-<footer class="border-top pt-5" style="color: var(--sc); position: relative; bottom: 0;">
+<footer class="border-top pt-5">
   <div class="container">
     <div class="row gy-4 gy-lg-0 pb-3">
 
@@ -54,14 +54,14 @@
           >
         </div>
 
-        <p class="mb-2" style="color: var(--tc2);">
+        <p class="mb-2 text-muted">
           Potrzebujesz pomocy<br> lub masz pytania?
         </p><br>
 
         <!-- kontener przycisków -->
         <div class="d-flex flex-column align-items-center align-items-sm-end">
-          <a href="/kontakt" class="btn-shop btn-contact px-4 mb-3">KONTAKT →</a>
-          <a href="tel:+48223905995" class="btn-number btn-shop px-4">+48 22 390 59 95</a>
+          <a href="/kontakt" class="btn btn-primary btn-contact px-4 mb-3">KONTAKT →</a>
+          <a href="tel:+48223905995" class="btn btn-phone px-4">+48 22 390 59 95</a>
         </div>
       </div>
 
@@ -71,41 +71,33 @@
     <!-- NOWA SEKCJA -->
     <hr class="my-4">
 
-    <div class="row align-items-center text-center text-lg-start pt-5" style="padding-bottom: 28px;">
+    <div class="row align-items-center text-center text-lg-start pt-5 pb-4">
       <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-        <p class="fw-semibold text-uppercase small mb-4" style="color: var(--sc);">
+        <p class="fw-semibold text-uppercase small mb-4 text-secondary">
           KWALIFIKOWANY DOSTAWCA USŁUG ZAUFANIA
         </p>
         <div class="d-flex flex-column flex-lg-row gap-4 align-items-center align-items-lg-start">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/eidas.png" alt="eIDAS" style="max-height: 45px; object-fit: contain;">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/eidas.png" alt="eIDAS" class="footer-badge-img">
           <div class="w-100">
-        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start" style="gap: 14px; margin-bottom: 14px;">
-          <span class="badge rounded-1 px-3 py-2 fw-normal btn-yellow" style="cursor: pointer; background-color: #FFCC00; color: #000;">QCert for ESig</span>
-          <span class="badge rounded-1 px-3 py-2 fw-normal btn-yellow" style="cursor: pointer; background-color: #FFCC00; color: #000;">QCert for ESeal</span>
+        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 mb-3">
+          <span class="badge rounded-1 px-3 py-2 fw-normal footer-badge">QCert for ESig</span>
+          <span class="badge rounded-1 px-3 py-2 fw-normal footer-badge">QCert for ESeal</span>
         </div>
-        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start" style="gap: 14px;">
-          <span class="badge rounded-1 px-3 py-2 fw-normal btn-yellow" style="cursor: pointer; background-color: #FFCC00; color: #000;">QTimeStamp</span>
-          <span class="badge rounded-1 px-3 py-2 fw-normal btn-yellow" style="cursor: pointer; background-color: #FFCC00; color: #000;">QWAC</span>
+        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+          <span class="badge rounded-1 px-3 py-2 fw-normal footer-badge">QTimeStamp</span>
+          <span class="badge rounded-1 px-3 py-2 fw-normal footer-badge">QWAC</span>
         </div>
           </div>
         </div>
       </div>
-<style>
-  .btn-yellow:hover{
-    filter: brightness(1.05);
-  }
-  .btn-yellow{
-    transition: all 0.2s ease;
-  }
-</style>
       <div class="col-12 col-lg-6 text-lg-end">
-        <p class="fw-semibold text-uppercase small mb-3" style="color: var(--sc);">
+        <p class="fw-semibold text-uppercase small mb-3 text-secondary">
           USŁUGI ZAUFANIA ŚWIADCZONE ZGODNIE ZE STANDARDAMI NA<br> TERENIE CAŁEJ UNII EUROPEJSKIEJ
         </p>
         <div class="d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center gap-4">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mc.png" alt="Ministerstwo Cyfryzacji" style="max-height: 50px; object-fit: contain;">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/nccert.png" alt="NCCert" style="max-height: 50px; object-fit: contain;">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img.svg" alt="error img" style="max-height: 50px; object-fit: contain;">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mc.png" alt="Ministerstwo Cyfryzacji" class="footer-cert-img">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/nccert.png" alt="NCCert" class="footer-cert-img">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img.svg" alt="error img" class="footer-cert-img">
         </div>
       </div>
     </div>
@@ -157,27 +149,6 @@
         </a>
       </div>
 
-      <style>
-        .border{
-          border-color: var(--sc) !important;
-        }
-        .border:hover {
-          border-color: #007bff !important;
-          color: #007bff !important;
-        }
-        svg {
-          transition: color 0.3s ease;
-        }
-        a:hover svg {
-          stroke: #007bff;
-        }
-        @media (max-width: 575.98px) {
-          .rating-google {
-            transform: scale(0.7);
-            margin-left: -35px !important;
-          }
-        }
-      </style>
 
 <div class="d-flex align-items-center flex-wrap ">
   <!-- Logo Google -->
@@ -241,29 +212,10 @@
   </style>
 </div>
 
-<style>
-  .star {
-    color: #d1d5db;
-    cursor: pointer;
-    transition: transform 0.15s ease, color 0.15s ease;
-  }
-
-  .star.active {
-    color: #ff8c00;
-  }
-
-  .star:hover {
-    transform: scale(1.2);
-  }
-
-  a:hover {
-    color: #007bff !important;
-  }
-</style>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const stars = document.querySelectorAll(".star");
+    const stars = document.querySelectorAll(".rating-star");
     const ratingNumber = document.getElementById("rating-number");
     const defaultRating = 4;
     const defaultText = "4,1";
