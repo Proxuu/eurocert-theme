@@ -14,7 +14,24 @@ get_header();
 <body class="main-font text-primary">
 
 
-<div id="scroll-progress" class="scroll-progress"></div>
+<div id="scroll-progress"></div>
+
+<style>
+  #scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background: var(--ac, #0d6efd); 
+    z-index: 9999;
+    transition: width 0.1s linear;
+  }
+
+  body {
+    scroll-behavior: smooth;
+  }
+</style>
 
 <script>
   window.addEventListener('scroll', function() {
@@ -63,6 +80,14 @@ get_header();
   </div>
 </div>
 
+<style>
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+</style>
 <nav class="navbar navbar-expand-lg">
   <div class="container-lg">
     <div class="d-flex">
@@ -70,13 +95,27 @@ get_header();
         $custom_logo_id = get_theme_mod('custom_logo');
         $logo = wp_get_attachment_image_src($custom_logo_id, 'full'); ?>
         <a href="<?php echo esc_url(home_url('/')); ?>" class="navbar-brand">
-            <img src="<?php echo esc_url($logo[0]); ?>" alt="<?php bloginfo('name'); ?>" class="main-logo-img">
+            <img src="<?php echo esc_url($logo[0]); ?>" alt="<?php bloginfo('name'); ?>" style="max-height:70px; height:auto; width:auto; object-fit:contain;" class="main-logo-img">
         </a>
+        <style>
+            @media (max-width: 576px) {
+            .main-logo-img {
+                max-height: 35px !important;
+            }
+            }
+        </style>
         <?php else : ?>
         <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
         <?php endif; ?>
 
-        <div class="d-flex align-items-center lang-wrapper lang-wrapper-mobile d-lg-none">
+        <div class="d-flex align-items-center lang-wrapper d-lg-none" style="margin-left: -15px;">
+            <style>
+          @media (min-width: 576px) {
+              .lang-wrapper.d-lg-none {
+                margin-left: 0 !important;
+                  }
+              }
+            </style>
             <svg class="lang-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"></circle><path d="M2 12h20" stroke="currentColor" stroke-width="2"></path><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" stroke-width="2"></path></svg>
             <?php echo do_shortcode( '[language-switcher]' ) ?>
           </div>
@@ -97,11 +136,18 @@ get_header();
         ?>
         </div>
     </div>
+    <style>
+      @media (max-width: 1280px) {
+        .primary-menu .navbar-nav {
+          gap: .25rem !important; 
+        }
+      }
+    </style>
 
 
     <div class="d-flex">
 
-        <a href="<?php echo get_post_type_archive_link('product'); ?>" class="btn btn-primary typing-btn d-none d-lg-flex">
+        <a href="<?php echo get_post_type_archive_link('product'); ?>" class="btn-shop typing-btn d-none d-lg-flex" style="background-color: var(--pc);">
             <span id="typing-text"></span>
         </a>
 
@@ -168,13 +214,13 @@ get_header();
   </div>
 </nav>
 
-<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+<div class="offcanvas offcanvas-end" style="z-index: 9999999;" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
   <div class="offcanvas-header">
         <?php if (has_custom_logo()) :
         $custom_logo_id = get_theme_mod('custom_logo');
         $logo = wp_get_attachment_image_src($custom_logo_id, 'full'); ?>
         <a href="<?php echo esc_url(home_url('/')); ?>" class="navbar-brand">
-            <img src="<?php echo esc_url($logo[0]); ?>" alt="<?php bloginfo('name'); ?>" class="offcanvas-logo">
+            <img src="<?php echo esc_url($logo[0]); ?>" alt="<?php bloginfo('name'); ?>" style="max-height:50px; height:auto; width:auto; object-fit:contain;">
         </a>
         <?php else : ?>
         <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
@@ -196,7 +242,7 @@ get_header();
 
     <hr style="opacity: 0.1;">
 
-        <a href="<?php echo get_post_type_archive_link('product'); ?>" class="btn btn-primary mt-4" style="max-width: 200px;">
+        <a href="<?php echo get_post_type_archive_link('product'); ?>" class="btn-shop" style="background-color: var(--pc); color: white !important; font-weight: 700; margin-top: 20px; max-width: 200px;">
             SKLEP ONLINE
         </a>
 
@@ -217,6 +263,13 @@ get_header();
 </div>
 
 
+<style>
+.offcanvas-start {
+    width: 80% !important;
+    z-index: 99999999;
+}
+
+</style>
 
 
 </div>
