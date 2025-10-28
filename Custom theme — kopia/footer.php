@@ -1,7 +1,7 @@
 </main>
 
 
-<footer class="border-top pt-5" style="color: var(--sc); position: relative; bottom: 0;">
+<footer class="border-top pt-5 footer-main">
   <div class="container">
     <div class="row gy-4 gy-lg-0 pb-3">
 
@@ -46,15 +46,14 @@
 
       <div class="col-12 col-sm-6 col-lg-3 text-center text-sm-end">
         <div class="mb-4">
-          <img 
-            src="<?php echo get_theme_mod('custom_logo') ? wp_get_attachment_image_src(get_theme_mod('custom_logo'), 'full')[0] : get_template_directory_uri() . '/assets/img/logo.png'; ?>" 
-            alt="EuroCert" 
-            class="img-fluid" 
-            style="max-height: 60px;"
+          <img
+            src="<?php echo get_theme_mod('custom_logo') ? wp_get_attachment_image_src(get_theme_mod('custom_logo'), 'full')[0] : get_template_directory_uri() . '/assets/img/logo.png'; ?>"
+            alt="EuroCert"
+            class="img-fluid footer-logo-img"
           >
         </div>
 
-        <p class="mb-2" style="color: var(--tc2);">
+        <p class="mb-2 footer-help-text">
           Potrzebujesz pomocy<br> lub masz pytania?
         </p><br>
 
@@ -71,41 +70,33 @@
     <!-- NOWA SEKCJA -->
     <hr class="my-4">
 
-    <div class="row align-items-center text-center text-lg-start pt-5" style="padding-bottom: 28px;">
+    <div class="row align-items-center text-center text-lg-start pt-5 pb-4">
       <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-        <p class="fw-semibold text-uppercase small mb-4" style="color: var(--sc);">
+        <p class="fw-semibold text-uppercase small mb-4 footer-section-title">
           KWALIFIKOWANY DOSTAWCA USŁUG ZAUFANIA
         </p>
         <div class="d-flex flex-column flex-lg-row gap-4 align-items-center align-items-lg-start">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/eidas.png" alt="eIDAS" style="max-height: 45px; object-fit: contain;">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/eidas.png" alt="eIDAS" class="footer-cert-img">
           <div class="w-100">
-        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start" style="gap: 14px; margin-bottom: 14px;">
-          <span class="badge rounded-1 px-3 py-2 fw-normal btn-yellow" style="cursor: pointer; background-color: #FFCC00; color: #000;">QCert for ESig</span>
-          <span class="badge rounded-1 px-3 py-2 fw-normal btn-yellow" style="cursor: pointer; background-color: #FFCC00; color: #000;">QCert for ESeal</span>
+        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start footer-badges-row mb-3">
+          <span class="badge rounded-1 px-3 py-2 fw-normal badge-yellow">QCert for ESig</span>
+          <span class="badge rounded-1 px-3 py-2 fw-normal badge-yellow">QCert for ESeal</span>
         </div>
-        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start" style="gap: 14px;">
-          <span class="badge rounded-1 px-3 py-2 fw-normal btn-yellow" style="cursor: pointer; background-color: #FFCC00; color: #000;">QTimeStamp</span>
-          <span class="badge rounded-1 px-3 py-2 fw-normal btn-yellow" style="cursor: pointer; background-color: #FFCC00; color: #000;">QWAC</span>
+        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start footer-badges-row">
+          <span class="badge rounded-1 px-3 py-2 fw-normal badge-yellow">QTimeStamp</span>
+          <span class="badge rounded-1 px-3 py-2 fw-normal badge-yellow">QWAC</span>
         </div>
           </div>
         </div>
       </div>
-<style>
-  .btn-yellow:hover{
-    filter: brightness(1.05);
-  }
-  .btn-yellow{
-    transition: all 0.2s ease;
-  }
-</style>
       <div class="col-12 col-lg-6 text-lg-end">
-        <p class="fw-semibold text-uppercase small mb-3" style="color: var(--sc);">
+        <p class="fw-semibold text-uppercase small mb-3 footer-section-title">
           USŁUGI ZAUFANIA ŚWIADCZONE ZGODNIE ZE STANDARDAMI NA<br> TERENIE CAŁEJ UNII EUROPEJSKIEJ
         </p>
         <div class="d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center gap-4">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mc.png" alt="Ministerstwo Cyfryzacji" style="max-height: 50px; object-fit: contain;">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/nccert.png" alt="NCCert" style="max-height: 50px; object-fit: contain;">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img.svg" alt="error img" style="max-height: 50px; object-fit: contain;">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mc.png" alt="Ministerstwo Cyfryzacji" class="footer-partner-img">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/nccert.png" alt="NCCert" class="footer-partner-img">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img.svg" alt="error img" class="footer-partner-img">
         </div>
       </div>
     </div>
@@ -119,16 +110,14 @@
        
 
         
-        <a href="#" class="d-flex align-items-center justify-content-center border border-2 rounded-circle text-decoration-none"
-          style="width: 48px; height: 48px; color: #002855; transition: all 0.3s;">
+        <a href="#" class="footer-social-link">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
             <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
           </svg>
         </a>
 
-        <a href="#" class="d-flex align-items-center justify-content-center border border-2 rounded-circle text-decoration-none"
-          style="width: 48px; height: 48px; border-color: #002855; color: #002855; transition: all 0.3s;">
+        <a href="#" class="footer-social-link">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
@@ -137,8 +126,7 @@
           </svg>
         </a>
 
-        <a href="#" class="d-flex align-items-center justify-content-center border border-2 rounded-circle text-decoration-none"
-          style="width: 48px; height: 48px; border-color: #002855; color: #002855; transition: all 0.3s;">
+        <a href="#" class="footer-social-link">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
             <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path>
@@ -146,8 +134,7 @@
           </svg>
         </a>
 
-        <a href="#" class="d-flex align-items-center justify-content-center border border-2 rounded-circle text-decoration-none"
-          style="width: 48px; height: 48px; border-color: #002855; color: #002855; transition: all 0.3s;">
+        <a href="#" class="footer-social-link">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
             <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
@@ -157,27 +144,6 @@
         </a>
       </div>
 
-      <style>
-        .border{
-          border-color: var(--sc) !important;
-        }
-        .border:hover {
-          border-color: #007bff !important;
-          color: #007bff !important;
-        }
-        svg {
-          transition: color 0.3s ease;
-        }
-        a:hover svg {
-          stroke: #007bff;
-        }
-        @media (max-width: 575.98px) {
-          .rating-google {
-            transform: scale(0.7);
-            margin-left: -35px !important;
-          }
-        }
-      </style>
 
 <div class="d-flex align-items-center flex-wrap ">
   <!-- Logo Google -->
@@ -192,7 +158,7 @@
     </div>
 
     <!-- Ocena -->
-    <span id="rating-number" class="me-2 fw-semibold" style="color: #ff8c00;">4,1</span>
+    <span id="rating-number" class="me-2 fw-semibold rating-number">4,1</span>
 
     <!-- Gwiazdki -->
     <div id="stars" class="d-flex me-3">
@@ -206,60 +172,23 @@
   <!-- Linki -->
 
   <div class="text-opinie">
-    <style>
-      @media (max-width: 575.98px) {
-        .text-opinie {
-          margin-left: -35px !important;
-        }
-      }
-    </style>
     <a href="https://www.google.com/maps/place/EuroCert+-+Oficjalny+Punkt+Sprzedaży+-+Kwalifikowany+Podpis+Elektroniczny+%7C+Pieczęć+Elektroniczna+%7C+KSeF/@52.1188615,21.0158829,16.92z/data=!4m8!3m7!1s0x471932096afc5a85:0x51ea6f25df712ad4!8m2!3d52.1188159!4d21.01759!9m1!1b1!16s%2Fg%2F11c533yp51?entry=ttu"
       target="_blank"
       rel="noopener noreferrer"
-      class="text-decoration-none footer-link"
-      style="color: var(--tc2); font-size: 15px;">
+      class="text-decoration-none footer-link">
       (144 opinii)
     </a>
 
-    <span class="mx-sm-2 mx-1 footer-link-sep" style="color: var(--tc2); font-size: 15px;">|</span>
+    <span class="mx-sm-2 mx-1 footer-link-sep">|</span>
 
     <a href="https://g.page/r/CdQqcd8lb-pREAE/review"
       target="_blank"
       rel="noopener noreferrer"
-      class="text-decoration-none footer-link"
-      style="color: var(--tc2); font-size: 15px;">
+      class="text-decoration-none footer-link">
       Wystaw opinię
     </a>
   </div>
-  <style>
-    @media (max-width: 575.98px) {
-      .footer-link,
-      .footer-link-sep {
-        font-size: 13px !important;
-      }
-    }
-  </style>
 </div>
-
-<style>
-  .star {
-    color: #d1d5db;
-    cursor: pointer;
-    transition: transform 0.15s ease, color 0.15s ease;
-  }
-
-  .star.active {
-    color: #ff8c00;
-  }
-
-  .star:hover {
-    transform: scale(1.2);
-  }
-
-  a:hover {
-    color: #007bff !important;
-  }
-</style>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -308,18 +237,18 @@
 
   </div>
 
-  
+
 </footer>
-<div style="background-color: #0064bc09; font-size: 12px; padding-bottom: 8px;">
-    <div  class="container d-flex flex-column flex-lg-row justify-content-between align-items-center  pt-3">
+<div class="footer-bottom">
+    <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center pt-3">
       <div class="mb-3 mb-lg-0 text-center text-lg-start">
-        <a href="#" class="text-decoration-none " style="color: var(--tc2)">Polityka prywatności</a>
-        <span class="px-2" style="color: var(--tc2)">|</span>
-        <a href="#" class="text-decoration-none " style="color: var(--tc2)">Regulamin strony internetowej</a>
-        <span class="px-2" style="color: var(--tc2)">|</span>
-        <a href="#" class="text-decoration-none " style="color: var(--tc2)">Regulamin usług zaufania</a>
+        <a href="#" class="text-decoration-none footer-bottom-link">Polityka prywatności</a>
+        <span class="px-2 footer-bottom-separator">|</span>
+        <a href="#" class="text-decoration-none footer-bottom-link">Regulamin strony internetowej</a>
+        <span class="px-2 footer-bottom-separator">|</span>
+        <a href="#" class="text-decoration-none footer-bottom-link">Regulamin usług zaufania</a>
       </div>
-      <div style="color: var(--tc2);" class="text-center text-lg-start">
+      <div class="footer-bottom-text text-center text-lg-start">
         Centrum kwalifikowane Eurocert<br>
         EuroCert Sp. z o.o., Puławska 479, 02-844 Warszawa, NIP 5251252979
       </div>
