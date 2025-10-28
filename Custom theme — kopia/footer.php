@@ -49,7 +49,7 @@
           <img
             src="<?php echo get_theme_mod('custom_logo') ? wp_get_attachment_image_src(get_theme_mod('custom_logo'), 'full')[0] : get_template_directory_uri() . '/assets/img/logo.png'; ?>"
             alt="EuroCert"
-            class="img-fluid footer-logo-img"
+            class="img-fluid footer-brand-img"
           >
         </div>
 
@@ -60,7 +60,7 @@
         <!-- kontener przycisków -->
         <div class="d-flex flex-column align-items-center align-items-sm-end">
           <a href="/kontakt" class="btn-shop btn-contact px-4 mb-3">KONTAKT →</a>
-          <a href="tel:+48223905995" class="btn-number btn-shop px-4">+48 22 390 59 95</a>
+          <a href="tel:+48223905995" class="btn-phone btn-shop px-4">+48 22 390 59 95</a>
         </div>
       </div>
 
@@ -76,13 +76,13 @@
           KWALIFIKOWANY DOSTAWCA USŁUG ZAUFANIA
         </p>
         <div class="d-flex flex-column flex-lg-row gap-4 align-items-center align-items-lg-start">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/eidas.png" alt="eIDAS" class="footer-cert-img">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/eidas.png" alt="eIDAS" class="footer-certification-img">
           <div class="w-100">
-        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start footer-badges-row mb-3">
+        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start footer-badge-list-row mb-3">
           <span class="badge rounded-1 px-3 py-2 fw-normal badge-yellow">QCert for ESig</span>
           <span class="badge rounded-1 px-3 py-2 fw-normal badge-yellow">QCert for ESeal</span>
         </div>
-        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start footer-badges-row">
+        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start footer-badge-list-row">
           <span class="badge rounded-1 px-3 py-2 fw-normal badge-yellow">QTimeStamp</span>
           <span class="badge rounded-1 px-3 py-2 fw-normal badge-yellow">QWAC</span>
         </div>
@@ -94,9 +94,9 @@
           USŁUGI ZAUFANIA ŚWIADCZONE ZGODNIE ZE STANDARDAMI NA<br> TERENIE CAŁEJ UNII EUROPEJSKIEJ
         </p>
         <div class="d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center gap-4">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mc.png" alt="Ministerstwo Cyfryzacji" class="footer-partner-img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/nccert.png" alt="NCCert" class="footer-partner-img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img.svg" alt="error img" class="footer-partner-img">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mc.png" alt="Ministerstwo Cyfryzacji" class="footer-logo-partner-img">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/nccert.png" alt="NCCert" class="footer-logo-partner-img">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img.svg" alt="error img" class="footer-logo-partner-img">
         </div>
       </div>
     </div>
@@ -110,14 +110,14 @@
        
 
         
-        <a href="#" class="footer-social-link">
+        <a href="#" class="social-link">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
             <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
           </svg>
         </a>
 
-        <a href="#" class="footer-social-link">
+        <a href="#" class="social-link">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
@@ -126,7 +126,7 @@
           </svg>
         </a>
 
-        <a href="#" class="footer-social-link">
+        <a href="#" class="social-link">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
             <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path>
@@ -134,7 +134,7 @@
           </svg>
         </a>
 
-        <a href="#" class="footer-social-link">
+        <a href="#" class="social-link">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
             <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>

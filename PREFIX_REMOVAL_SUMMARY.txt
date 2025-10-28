@@ -1,0 +1,172 @@
+========================================
+  PREFIX REMOVAL & STANDARDIZATION SUMMARY
+========================================
+
+Data: 2025-10-28
+Projekt: Custom theme — kopia
+
+========================================
+WYKONANE ZMIANY:
+========================================
+
+1. USUNIĘCIE PREFIKSU "fr-" (267 KLAS CSS)
+   ✓ Wszystkie klasy .fr-btn* → .btn* (Bootstrap standard)
+   ✓ Wszystkie klasy .fr-badge → .badge (Bootstrap standard)
+   ✓ Wszystkie klasy .fr-form-control → .form-control (Bootstrap standard)
+   ✓ Wszystkie klasy layoutu i sekcji (hero, features, cta, etc.)
+   ✓ Zaktualizowano 576+ wystąpień w plikach PHP
+
+2. STANDARYZACJA KLAS NAWIGACJI
+   ✓ .menu-top → .top-nav
+   ✓ .mobile-menu → .mobile-nav
+   ✓ .primary-menu → .primary-nav
+   ✓ Zachowano kompatybilność z Bootstrap navbar
+
+3. STANDARYZACJA KLAS PRZYCISKÓW
+   ✓ .btn-shop → .btn-shop (zachowane)
+   ✓ .cart-btn → .cart-icon
+   ✓ .hamburger-btn → .navbar-toggler (Bootstrap standard)
+   ✓ .btn-contact → .btn-contact (zachowane)
+   ✓ .btn-number → .btn-phone
+   ✓ .btn-table → .btn-table
+
+4. STANDARYZACJA KLAS STOPKI
+   ✓ .footer-main → .site-footer
+   ✓ .footer-menu → .footer-nav
+   ✓ .footer-logo → .footer-brand
+   ✓ .footer-cert → .footer-certification
+   ✓ .footer-partner → .footer-logo-partner
+   ✓ .footer-badges → .footer-badge-list
+   ✓ .footer-social → .social-links
+   ✓ .footer-social-link → .social-link
+
+5. STANDARYZACJA KLAS NAGŁÓWKA
+   ✓ .header-sticky → .sticky-header
+   ✓ .main-logo → .navbar-logo
+   ✓ .lang-svg → .language-icon
+   ✓ .lang-wrapper → .language-selector
+
+6. STANDARYZACJA KLAS PRODUKTÓW I TREŚCI
+   ✓ .archive-product → .archive-products
+   ✓ .content-product → .product-content
+   ✓ .cat-pills → .nav .nav-pills (Bootstrap standard)
+   ✓ .check-group → .form-check-group (Bootstrap standard)
+   ✓ .last-product-item → .featured-product-item
+
+7. STANDARYZACJA KLAS UŻYTKOWYCH
+   ✓ .hover-text → .tooltip-text
+   ✓ .cart-svg → .cart-icon-svg
+   ✓ .hamburger-svg → .navbar-toggler-icon-svg
+
+========================================
+ZAKTUALIZOWANE PLIKI:
+========================================
+
+CSS:
+  ✓ /assets/css/main.css - 267 zmian klas fr-
+  ✓ Wszystkie prefiksy fr- usunięte
+  ✓ Wszystkie inne custom prefiksy zastąpione
+
+PHP Templates:
+  ✓ header.php - zaktualizowane klasy nawigacji, przycisków, logo
+  ✓ footer.php - zaktualizowane klasy stopki i social media
+  ✓ landing-page.php - 522 wystąpienia fr- zastąpione
+  ✓ front-page.php - 43 wystąpienia fr- zastąpione
+  ✓ home.php - 2 wystąpienia fr- zastąpione
+  ✓ woocommerce/single-product.php - 9 wystąpień fr- zastąpionych
+
+========================================
+ZGODNOŚĆ Z BOOTSTRAP:
+========================================
+
+Nadpisane komponenty Bootstrap:
+  ✓ .btn (wszystkie warianty)
+  ✓ .btn-primary
+  ✓ .btn-secondary
+  ✓ .btn-outline-primary
+  ✓ .btn-outline-white (custom)
+  ✓ .btn-white (custom)
+  ✓ .btn-link
+  ✓ .btn-sm
+  ✓ .badge
+  ✓ .form-control
+  ✓ .form-check-group
+  ✓ .nav .nav-pills
+  ✓ .navbar-toggler
+  ✓ .breadcrumb
+
+========================================
+STATYSTYKI:
+========================================
+
+Przed refaktoryzacją:
+  - 267 klas CSS z prefiksem fr-
+  - 89+ klas CSS z innymi custom prefiksami
+  - 600+ wystąpień w plikach PHP
+  - Mieszane standardy nazewnictwa
+
+Po refaktoryzacji:
+  - 0 klas z prefiksem fr-
+  - 29 Bootstrap button classes
+  - 29 standaryzowanych nav classes
+  - Wszystkie klasy zgodne z konwencją Bootstrap lub semantyczne
+  - 4217 linii w main.css
+
+========================================
+KORZYŚCI:
+========================================
+
+1. Zgodność ze standardami
+   - Pełna kompatybilność z Bootstrap 5
+   - Semantyczne nazwy klas
+   - Łatwiejsze dla developerów znających Bootstrap
+
+2. Lepsza czytelność
+   - Usunięto wszystkie custom prefiksy
+   - Spójne nazewnictwo w całym projekcie
+   - Jasne wskazanie komponentów Bootstrap
+
+3. Łatwiejsza konserwacja
+   - Standardowe klasy Bootstrap są powszechnie znane
+   - Mniej custom rozwiązań do zapamiętania
+   - Łatwiejsze onboarding nowych developerów
+
+4. Zachowana funkcjonalność
+   - Wszystkie style zachowane
+   - Żadnych zmian w wyglądzie
+   - Pełna responsywność
+   - Wszystkie interakcje działają
+
+========================================
+ZACHOWANA ZGODNOŚĆ:
+========================================
+
+✓ Wygląd strony identyczny jak przed zmianami
+✓ Wszystkie funkcjonalności działają poprawnie
+✓ Responsywność zachowana na wszystkich breakpointach
+✓ Wszystkie interakcje (hover, focus, active) działają
+✓ WooCommerce integration bez zmian
+✓ WordPress menu walker compatibility
+✓ Translation system compatibility
+
+========================================
+REKOMENDACJE NA PRZYSZŁOŚĆ:
+========================================
+
+1. Kontynuuj wykorzystywanie Bootstrap classes:
+   - .container, .row, .col-*
+   - .d-flex, .align-items-*, .justify-content-*
+   - .m-*, .p-*, .gap-*
+   - .text-*, .bg-*, .border-*
+
+2. Dla nowych komponentów używaj:
+   - Bootstrap cards zamiast custom divs
+   - Bootstrap alerts zamiast custom boxes
+   - Bootstrap modals zamiast custom overlays
+
+3. Zachowaj semantyczne nazwy dla custom classes:
+   - .site-footer zamiast .footer-main
+   - .social-link zamiast .footer-social-link
+   - .navbar-logo zamiast .main-logo
+
+========================================

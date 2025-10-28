@@ -15,7 +15,7 @@ get_header();
     <div class="text-center mb-4">
       <span class="blog-badge">BAZA WIEDZY</span>
       <h1 class="blog-section-title">Blog</h1>
-      <p class="fr-text">Baza wiedzy, case studies, artykuły, webinary, materiały do pobrania.</p>
+      <p class="text">Baza wiedzy, case studies, artykuły, webinary, materiały do pobrania.</p>
     </div>
 
 
@@ -60,7 +60,7 @@ get_header();
             // print all
             $all_url = $base_url . $search_param;
           ?>
-          <a style="font-weight: 500;" href="<?php echo esc_url( $all_url ); ?>" class="fr-btn <?php echo $current_cat===0 ? 'fr-btn-primary' : 'btn-outline-primary'; ?>">WSZYSTKIE ARTYKUŁY</a>
+          <a style="font-weight: 500;" href="<?php echo esc_url( $all_url ); ?>" class="btn <?php echo $current_cat===0 ? 'fr-btn-primary' : 'btn-outline-primary'; ?>">WSZYSTKIE ARTYKUŁY</a>
 
           <?php foreach ( $categories as $cat ) : 
             // build link keeping search param if any
